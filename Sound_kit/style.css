@@ -1,0 +1,43 @@
+body{
+    background-image: url(eminem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buttons{
+    display: flex;
+    margin: 100px auto 0;
+    justify-content: center;
+    width: 400px;
+    flex-wrap: wrap;
+}
+.button{
+    width: 80px;
+    height: 80px;
+    background-color: darkblue;
+    border: 2px darkturquoise dashed;
+    border-radius: 10px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: box-shadow linear 0.2s;
+    user-select: none;
+}
+.button:hover{
+    box-shadow: 0 0 10px black;
+}
+.recording{
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+    border: 1px black solid;
+    width: 200px;
+}
+.recording>button{
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+}
