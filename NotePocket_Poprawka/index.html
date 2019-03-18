@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NotePocket</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+
+</head>
+<body>
+    <div id = "glowna">
+        NotePocket
+    </div>
+    <div id ="buttons">
+            <button onclick="addNote()">Dodaj</button>
+            <button onclick="removeNote()">Usuń</button>
+    </div>
+    <div id = "overlay" onclick="closeOverlay()">
+    </div>
+    <div id = "inputBox">
+            <div id = "dodanie" onclick="closeOverlay()">X</div>
+            <input type = "text" id = "noteTitle" placeholder = "Wprowadź tytuł notatki" />
+            <textarea id="note" placeholder = "Wprowadź treść notatki"></textarea>
+            <button onclick="addNoteF()">Dodaj Notatkę</button>
+            <button onclick="saveChanges()">Zapisz</button>
+            <button onclick="removeNote()">Usuń Notatkę</button>
+    </div>
+    <hr width="100%">
+    <div id = "Notes">
+        <div id = "Notes1" class = "NoteRow">
+            <div id = "N1" class = "NoteDiv" onclick = editNote(1)>
+                <div id = "T1" class="NoteTitleDiv">Tytuł</div>
+                <div id = "Nd1" class= "NoteDataDiv">Treść</div>
+            </div>
+            <div id = "N2" class = "NoteDiv" onclick = editNote(2)>
+                <div id = "T2" class="NoteTitleDiv">Tytuł</div>
+                <div id = "Nd2" class= "NoteDataDiv">Treść</div>
+            </div>
+            <div id = "N3" class = "NoteDiv" onclick = editNote(3)>
+                <div id = "T3" class="NoteTitleDiv">Tytuł</div>
+                <div id = "Nd3" class= "NoteDataDiv">Treść</div>
+            </div>
+        </div>
+        <div id = "Notes2" class = "NoteRow">
+            <div id = "N4" class = "NoteDiv" onclick = editNote(4)>
+                <div id = "T4" class="NoteTitleDiv">Tytuł</div>
+                <div id = "Nd4" class= "NoteDataDiv">Treść</div>
+            </div>
+            <div id = "N5" class = "NoteDiv" onclick = editNote(5)>
+                <div id = "T5" class="NoteTitleDiv">Tytuł</div>
+                <div id = "Nd5" class= "NoteDataDiv">Treść</div>
+            </div>
+            <div id = "N6" class = "NoteDiv" onclick = editNote(6)>
+                <div id = "T6" class="NoteTitleDiv">Tytuł</div>
+                <div id = "Nd6" class= "NoteDataDiv">Treść</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
